@@ -7,17 +7,17 @@ import { useAuth } from "@/components/providers/auth-provider";
 export function AuthGuard({ children }: { children: React.ReactNode }) {
   const pathname = usePathname();
   const router = useRouter();
-  const { hydrated, isAuthenticated } = useAuth();
+  const { hydrated, session } = useAuth();
 
   useEffect(() => {
-    if (!hydrated || isAuthenticated) {
+    if (!hydrated || session?.accessToken) {
       return;
     }
 
     router.replace(`/login?next=${encodeURIComponent(pathname)}`);
-  }, [hydrated, isAuthenticated, pathname, router]);
+  }, [hydrated, pathname, router, session?.accessToken]);
 
-  if (!hydrated || !isAuthenticated) {
+  if (!hydrated || !session?.accessToken) {
     return (
       <div className="grid-shell py-20">
         <div className="glass-card mx-auto max-w-xl p-10 text-center">

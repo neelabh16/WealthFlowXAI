@@ -142,7 +142,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         hydrated,
         user,
         session,
-        isAuthenticated: Boolean(user && session?.accessToken),
+        isAuthenticated: Boolean(session?.accessToken),
         login,
         register,
         logout,
