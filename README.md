@@ -128,11 +128,6 @@ Services:
 - Backend API: `http://localhost:8000/api`
 - Swagger docs: `http://localhost:8000/api/docs/`
 
-## Demo login
-
-- Email: `demo@wealthflow.ai`
-- Password: `Demo@12345`
-
 ## API overview
 
 - `POST /api/auth/register/`
