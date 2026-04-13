@@ -1,6 +1,6 @@
 # WealthFlow X AI
 
-WealthFlow X AI is a hackathon-ready personal finance platform with an AI advisor, portfolio and goal tracking, analytics dashboards, fraud signal monitoring, notifications, and exportable reports.
+WealthFlow X AI is an AI-powered personal finance platform designed to move users beyond cashback-driven engagement and toward real financial empowerment. Instead of rewarding spending with temporary incentives, it converts round-ups and cashback into savings, investing, and goal progress while giving users budgeting insights, smart saving triggers, portfolio visibility, analytics, and an AI finance advisor. The platform is built to make retention intrinsic by helping users build stronger habits, better discipline, and visible long-term wealth growth from everyday financial behavior.
 
 ## Tech stack
 
